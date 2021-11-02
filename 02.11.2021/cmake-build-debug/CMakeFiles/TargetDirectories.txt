@@ -1,0 +1,3 @@
+C:/Users/nub99/Desktop/c_projects/02.11.2021/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/nub99/Desktop/c_projects/02.11.2021/cmake-build-debug/CMakeFiles/02_11_2021.dir
+C:/Users/nub99/Desktop/c_projects/02.11.2021/cmake-build-debug/CMakeFiles/rebuild_cache.dir
