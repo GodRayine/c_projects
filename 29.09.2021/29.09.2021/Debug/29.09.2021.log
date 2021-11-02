@@ -1,0 +1,12 @@
+﻿  29.09.2021.cpp
+C:\Users\nub99\source\repos\29.09.2021\29.09.2021\29.09.2021.cpp(66,16): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\nub99\source\repos\29.09.2021\29.09.2021\29.09.2021.cpp(67,16): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\nub99\source\repos\29.09.2021\29.09.2021\29.09.2021.cpp(68,16): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\nub99\source\repos\29.09.2021\29.09.2021\29.09.2021.cpp(69,16): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\nub99\source\repos\29.09.2021\29.09.2021\29.09.2021.cpp(70,16): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\nub99\source\repos\29.09.2021\29.09.2021\29.09.2021.cpp(71,16): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\nub99\source\repos\29.09.2021\29.09.2021\29.09.2021.cpp(72,16): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\nub99\source\repos\29.09.2021\29.09.2021\29.09.2021.cpp(73,16): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\nub99\source\repos\29.09.2021\29.09.2021\29.09.2021.cpp(74,16): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\nub99\source\repos\29.09.2021\29.09.2021\29.09.2021.cpp(75,17): warning C4305: инициализация: усечение из "double" в "float"
+  29.09.2021.vcxproj -> C:\Users\nub99\source\repos\29.09.2021\Debug\29.09.2021.exe

@@ -1,0 +1,18 @@
+﻿  Source.cpp
+C:\Users\nub99\source\repos\20.10.2021\20.10.2021\Source.cpp(12,41): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\nub99\source\repos\20.10.2021\20.10.2021\Source.cpp(14,22): warning C4838: Преобразование из "int" в "char" требует сужающего преобразования.
+C:\Users\nub99\source\repos\20.10.2021\20.10.2021\Source.cpp(14,45): warning C4305: инициализация: усечение из "int" в "char"
+C:\Users\nub99\source\repos\20.10.2021\20.10.2021\Source.cpp(14,22): warning C4309: инициализация: усечение константного значения
+C:\Users\nub99\source\repos\20.10.2021\20.10.2021\Source.cpp(14,27): warning C4838: Преобразование из "int" в "char" требует сужающего преобразования.
+C:\Users\nub99\source\repos\20.10.2021\20.10.2021\Source.cpp(14,27): warning C4309: инициализация: усечение константного значения
+C:\Users\nub99\source\repos\20.10.2021\20.10.2021\Source.cpp(14,32): warning C4838: Преобразование из "int" в "char" требует сужающего преобразования.
+C:\Users\nub99\source\repos\20.10.2021\20.10.2021\Source.cpp(14,32): warning C4309: инициализация: усечение константного значения
+C:\Users\nub99\source\repos\20.10.2021\20.10.2021\Source.cpp(14,37): warning C4838: Преобразование из "int" в "char" требует сужающего преобразования.
+C:\Users\nub99\source\repos\20.10.2021\20.10.2021\Source.cpp(14,37): warning C4309: инициализация: усечение константного значения
+C:\Users\nub99\source\repos\20.10.2021\20.10.2021\Source.cpp(15,26): warning C4838: Преобразование из "char" в "bool" требует сужающего преобразования.
+C:\Users\nub99\source\repos\20.10.2021\20.10.2021\Source.cpp(15,49): warning C4305: инициализация: усечение из "char" в "bool"
+C:\Users\nub99\source\repos\20.10.2021\20.10.2021\Source.cpp(15,30): warning C4838: Преобразование из "char" в "bool" требует сужающего преобразования.
+C:\Users\nub99\source\repos\20.10.2021\20.10.2021\Source.cpp(15,34): warning C4838: Преобразование из "char" в "bool" требует сужающего преобразования.
+C:\Users\nub99\source\repos\20.10.2021\20.10.2021\Source.cpp(15,38): warning C4838: Преобразование из "char" в "bool" требует сужающего преобразования.
+C:\Users\nub99\source\repos\20.10.2021\20.10.2021\Source.cpp(15,42): warning C4838: Преобразование из "char" в "bool" требует сужающего преобразования.
+  20.10.2021.vcxproj -> C:\Users\nub99\source\repos\20.10.2021\Debug\20.10.2021.exe
