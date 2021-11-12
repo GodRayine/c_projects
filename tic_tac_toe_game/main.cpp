@@ -103,6 +103,7 @@ int main() {
     cin >> menu;
 
     bool win = true;
+    char who_win;
     switch (menu) {
         case 1:
             if (select == 1){
@@ -122,6 +123,7 @@ int main() {
                         || (play_ground_3x3[0][0] == play_ground_3x3[1][1] && play_ground_3x3[1][1] == play_ground_3x3[2][2] && play_ground_3x3[0][0] == 2)
                         || (play_ground_3x3[0][2] == play_ground_3x3[1][1] && play_ground_3x3[1][1] == play_ground_3x3[2][0] && play_ground_3x3[0][2] == 2)) {
                         win = false;
+                        who_win = 1;
                     }
                     else if ((play_ground_3x3[0][0] == play_ground_3x3[0][1] && play_ground_3x3[0][1] == play_ground_3x3[0][2] && play_ground_3x3[0][0] == 3)
                              || (play_ground_3x3[1][0] == play_ground_3x3[1][1] && play_ground_3x3[1][1] == play_ground_3x3[1][2] && play_ground_3x3[1][0] == 3)
@@ -132,41 +134,49 @@ int main() {
                              || (play_ground_3x3[0][0] == play_ground_3x3[1][1] && play_ground_3x3[1][1] == play_ground_3x3[2][2] && play_ground_3x3[0][0] == 3)
                              || (play_ground_3x3[0][2] == play_ground_3x3[1][1] && play_ground_3x3[1][1] == play_ground_3x3[2][0] && play_ground_3x3[0][2] == 3)) {
                         win = false;
+                        who_win = 2;
                     }
-                    const int size = 3;
-                    for (int y = 0; y < size; y++){
-                        for (int x = 0; x < size; x++){
-                            if (play_ground_3x3[y][x]==1){
-                                cout << "* ";
+                    if (win == true) {
+                        const int size = 3;
+                        for (int y = 0; y < size; y++) {
+                            for (int x = 0; x < size; x++) {
+                                if (play_ground_3x3[y][x] == 1) {
+                                    cout << "* ";
+                                } else if (play_ground_3x3[y][x] == 2) {
+                                    cout << "X ";
+                                } else if (play_ground_3x3[y][x] == 3) {
+                                    cout << "0 ";
+                                }
                             }
-                            else if(play_ground_3x3[y][x]==2){
-                                cout << "X ";
-                            }
-                            else if (play_ground_3x3[y][x]==3){
-                                cout << "0 ";
+                            cout << endl;
+                        }
+                        cout << "[Player 1 \"x\": ]";
+                        int x = 0;
+                        cin >> x;
+                        cout << "[Player 1 \"y\"]";
+                        int y = 0;
+                        cin >> y;
+                        play_ground_3x3[y][x] = 2;
+                        bool bot_turn = true;
+                        int b_x = 0;
+                        int b_y = 0;
+                        while (bot_turn == true) {
+                            if (play_ground_3x3[b_y][b_x] != 2 and play_ground_3x3[b_y][b_x] != 3) {
+                                play_ground_3x3[b_y][b_x] = 3;
+                                bot_turn = false;
+                            } else {
+                                b_y = 0 + rand() % size;
+                                b_x = 0 + rand() % size;
                             }
                         }
-                        cout << endl;
                     }
-                    cout << "[Player 1 \"x\": ]";
-                    int x = 0;
-                    cin >> x;
-                    cout << "[Player 1 \"y\"]";
-                    int y = 0;
-                    cin >> y;
-                    play_ground_3x3[y][x] = 2;
-                    bool bot_turn = true;
-                    int b_x = 0;
-                    int b_y = 0;
-                    while (bot_turn == true){
-                        if (play_ground_3x3[b_y][b_x] != 2 and play_ground_3x3[b_y][b_x] != 3){
-                            play_ground_3x3[b_y][b_x]=3;
-                            bot_turn = false;
-                        }
-                        else {
-                            b_y = 0 + rand() % size;
-                            b_x = 0 + rand() % size;
-                        }
+                    else if (win == false and who_win == 1) {
+                        cout << "!!! Ты выйграл !!!";
+                        return 0;
+                    }
+                    else if (win == false and who_win == 2) {
+                        cout << "!!! Ты проиграл !!!";
+                        return 0;
                     }
                 }
             }
