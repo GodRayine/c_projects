@@ -1,0 +1,3 @@
+C:/Users/nub99/Desktop/c_projects/quiz/cmake-build-debug/CMakeFiles/quiz.dir
+C:/Users/nub99/Desktop/c_projects/quiz/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/nub99/Desktop/c_projects/quiz/cmake-build-debug/CMakeFiles/rebuild_cache.dir
