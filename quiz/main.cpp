@@ -1,14 +1,17 @@
 #include <iostream>
 using namespace std;
 
+//Создаём структуру для сомого вопроса. | Create structure for questions.
 struct q_one{
     string quest;
     string answer;
     string w_answer[3];
 };
 
-q_one questions[15];
+//Обьявляем структуру как массив. | Announce structure how array.
+q_one *questions;
 
+//Инициализируем массив структуры со значениями. | We initialize the array of the structure with values.
 void set_questions(){
     questions[0]={"Тут должен быть 1 вопрос.","Тут должен быть ответ на 1 вопрос.", "1","2","3"};
     questions[1]={"Тут должен быть 2 вопрос.","Тут должен быть ответ на 2 вопрос.", "1","2","3"};
@@ -27,6 +30,7 @@ void set_questions(){
     questions[14]={"Тут должен быть 15 вопрос.","Тут должен быть ответ на 15 вопрос.", "1","2","3"};
 }
 
+//Функция меню. | Menu function.
 int menu (){
     string p_name;
     int menu;
@@ -37,14 +41,18 @@ int menu (){
     return menu;
 }
 
+//Основная функция. | The main function.
 int main(){
-    setlocale(0,"");
+    setlocale(LC_ALL, "ru_RU.UTF-8");
     int select = menu();
+    questions = new q_one[15];
+    set_questions();
     if (select == 1){
-
+        for (int i = 0; i < 15; i++){
+            cout << questions[i].quest << "\n" << questions[i].answer << "\n\n";
+        }
     }
     else if (select == 2) {
         return 0;
     }
-    return 0;
 }
