@@ -12,6 +12,13 @@ This project is not working as it should. I don't understand why.
 
 
 
+"Quiz"/"Виктарина"
+
+Game now work.
+В данный момент игра работает.
+
+
+
 "Old projects"/"Старые проекты"
 
 This all my old project, what I create before launtch git repo.
