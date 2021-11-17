@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+int settings_set = 1;
+bool win = true;
+int counter = 0;
+
 //Создаём структуру для сомого вопроса. | Create structure for questions.
 struct q_one{
     string quest;
@@ -36,10 +40,18 @@ int menu (){
     int menu;
     cout << "\tВикторина!\n\n[*] Введите имя игрока: ";
     cin >> p_name;
-    cout << "Здавствуйте " << p_name << "\n\n[*] Меню:\n\n[1] Играть\n\n[2] Выйти\n";
+    cout << "Здавствуйте " << p_name << "\n\n[*] Меню:\n\n[1] Играть\n\n[2] Настройки\n\n[3] Выход\n";
     cin >> menu;
     return menu;
 }
+
+//Функция настроек. | Settings function.
+void settings(){
+    cout << "\tНастройки\n\n\n[*] Выберите кол-во вопросов:\n\n[1] Один случайный вопрос\n\n[2] Пять случайных вопросов\n\n[3] Пятнадцать случайных вопросов\n";
+    cin >> settings_set;
+}
+
+//Игра с 1 (одним) вопросом. | Game with 1 (one) question.
 
 //Основная функция. | The main function.
 int main(){
@@ -48,11 +60,40 @@ int main(){
     questions = new q_one[15];
     set_questions();
     if (select == 1){
-        for (int i = 0; i < 15; i++){
-            cout << questions[i].quest << "\n" << questions[i].answer << "\n\n";
+        switch (settings_set) {
+            case 1:
+                while (win == true){
+                    cout << "Вопрос 1:\n";
+                    int random_question = rand() % 14+1;
+                    cout << questions[random_question].quest << "\n\n" <<
+                         questions[random_question].w_answer[0] << endl <<
+                         questions[random_question].answer << endl <<
+                         questions[random_question].w_answer[0] << endl <<
+                         questions[random_question].w_answer[0] << endl <<
+                         "\n\n[*] Выберите один правильный ответ:";
+                    int answer;
+                    cin >> answer;
+                    if (answer == 2){
+                        win = false;
+                        cout << "You win!!!";
+                    }
+                    else {
+                        cout << "Wrong :(\n\n";
+                        counter++;
+                    }
+                }
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
         }
     }
     else if (select == 2) {
+        settings();
+        main();
+    }
+    else if (select == 3) {
         return 0;
     }
 }
