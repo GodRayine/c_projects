@@ -71,8 +71,8 @@ int main() {
                     cout << questions[random_question].quest << "\n\n" <<
                          questions[random_question].w_answer[0] << endl <<
                          questions[random_question].answer << endl <<
-                         questions[random_question].w_answer[0] << endl <<
-                         questions[random_question].w_answer[0] << endl <<
+                         questions[random_question].w_answer[1] << endl <<
+                         questions[random_question].w_answer[2] << endl <<
                          "\n\n[*] Выберите один правильный ответ:";
                     int answer;
                     cin >> answer;
